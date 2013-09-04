@@ -5,18 +5,23 @@
     <title>{{page.title}}</title> 
   </head>
   <body>
+    <div id="fb-root"></div>
+    {% include facebook_sdk.html app_id="170078826515753" %}
     <header>
       <div class="inner">
         <h1>{{site.title}}</h1>
         <h2>{{site.subtitle}}</h2>
-        <a href="https://github.com/michaelforrest" class="button"><small>Follow me on</small>GitHub</a>
+
+        <aside class="social">
+          {% include follow.html username="michaelforrest" %}
+          {% include like.html url="https://www.facebook.com/MichaelForrestBlog" %}
+        </aside>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>{{ page.title }}</h1>
           {{ content }}
         </section>
 

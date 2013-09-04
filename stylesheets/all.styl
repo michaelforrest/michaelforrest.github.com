@@ -9,9 +9,30 @@ font()
 h1,h2,h3,h4,h5,h6,a.button
   font()
 
+h1 a
+  color white
+  &:hover
+    color #a6c4f3
+
+ul,ol
+  li
+    list-style disc
+    padding-left 0
+
+em
+  font-style italic
+
+header 
+  padding-top 20px
+  padding-bottom 20px
 aside#sidebar
   h2
     font-size 200%
+  li
+    list-style none
+
+.more
+  // color #68BB48
 
 aside.meta
   dl
@@ -41,7 +62,15 @@ aside.meta
     width 300px
     height 200px
 
+  aside.social
+    position absolute
+    width 200px
+    right 0
+    top 0
+
 @media only screen and (min-width: 960px)
  iframe.youtube
     width 500px
     height 340px
+
+  

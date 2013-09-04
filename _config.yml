@@ -5,3 +5,4 @@ exclude: ['designs']
 stylus:
   compress: true
   path: /usr/local/share/npm/bin/stylus
+excerpt_separator: "\n\n\n\n"
