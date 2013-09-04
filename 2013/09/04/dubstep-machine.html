@@ -5,8 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-
 <link rel="stylesheet" type="text/css" href="/stylesheets/MyFontsWebfontsKit.css">
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
@@ -21,52 +19,128 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=170078826515753";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <header>
       <div class="inner">
-        <h1>mf://TODO</h1>
+        <h1><a href="/">mf://TODO</a></h1>
         <h2>Michael Forrest's Museum of Unfinished Projects</h2>
-        <a href="https://github.com/michaelforrest" class="button"><small>Follow me on</small>GitHub</a>
+        <!-- <a href="https://github.com/michaelforrest" class="button"><small>Follow me on</small>GitHub</a> -->
+        <aside class="social">
+          <a href="https://twitter.com/michaelforrest" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @michaelforrest</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <div class="fb-like" data-href="https://www.facebook.com/MichaelForrestBlog" data-send="true" data-width="200" data-show-faces="true"></div>
+        </aside>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
+        
         <section id="main-content">
           <h1>The Dubstep Machine</h1>
-          
-
           <aside class="meta">
             <dl>
               <dt>Started:</dt>
-              <dd>2011-11-21
+              <dd>Late November 2011
             </dl>
             <dl>
               <dt>Last updated:</dt>
-              <dd>2013-01
+              <dd>January 2013
+            </dl>
+            <dl class="time_required">
+              <dt>Finishable in:</dt>
+              <dd>About two solid weeks' work</dd>
             </dl>
             <dl>
               <dt>Status:</dt>
               <dd><img src="/images/status/pending-inspiration.png" alt="Pending Inspiration"/></dd>
             </dl>
           </aside>
-          <iframe class="youtube" src="//www.youtube.com/embed/jD3sFoLLyMA?rel=0" frameborder="0" allowfullscreen></iframe>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <iframe class="youtube" src="//www.youtube.com/embed/C82l99LhN94?rel=0" frameborder="0" allowfullscreen></iframe>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Here is something I started a couple of years ago when dubstep still seemed quite cool.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>I was searching for the secret to making those types of musical progressions and came up with this app for interactively toggling and tuning tempo-locked loops. The visual aspect was important to me - I wanted to make sure there was always accurate graphical feedback tightly synchronised to the sound a la <a href='http://youtu.be/TIS8YWfUvB8'>Teenage Engineering OP-1</a>. I built this prototype in about a day but then I stalled…</p>
+
+<h3 id='what_happened'>What happened?</h3>
+
+<p>I needed:</p>
+
+<ol>
+<li>graphic design</li>
+
+<li>some decent loops</li>
+</ol>
+
+<p>Also, I&#8217;d decided to devote the bulk of my time to completing my <a href='http://goodtohear.co.uk/happiness'>Happiness Mood Tracking Journal App</a> and this app didn&#8217;t really in with the &#8216;Apps For Life&#8217; brand I was developing for <em>Good To Hear</em>.</p>
+
+<h3 id='has_anything_changed_since_then'>Has anything changed since then?</h3>
+
+<p>I subsequently finished my &#8216;dubstep anthem&#8217; <em>Believe It</em> so I do have some decent loops for it now.</p>
+<iframe frameborder='no' height='166' scrolling='no' src='https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F33381290' width='100%'><!-- KEEP --></iframe>
+<p>I had some ideas about the graphic design style too - I&#8217;d like to see a grungy pixel art aesthetic referencing areas of London.</p>
+
+<p>I discovered this Mac App <a href='http://www.paintcodeapp.com/'>PaintCode</a> that would be a good place to figure out some nice dynamic rendering.</p>
+
+<h3 id='can_it_be_revived'>Can it be revived?</h3>
+
+<p>Probably. I might rebrand it <em>Death To Dubstep</em> or something like that - &#8220;the last nail in dubstep&#8217;s coffin&#8221; to make it seem less dated. But it&#8217;s a very low priority at the moment.</p>
+
+<h3 id='is_there_any_way_to_help'>Is there any way to help?</h3>
+
+<p>I dunno. If you&#8217;re good at music visualisation or iOS programming you could help me get this finished.</p>
         </section>
 
         <aside id="sidebar">
-          <h2>The Heap</h2>
+          <h2>About Me</h2>
+<img src="/images/michael-forrest-face.png" width="140"/>
+<p>
+  Hello, I am Michael Forrest and I am an artist and programmer based in London, UK. 
+</p>
+<p>
+   I'm always starting things, working hard on them and then abandoning them. This blog is where I declassify some of the projects that have been clogging up my hard drive.
+</p>
+<h2>Unfinished Things</h2>
 <ul>
   
     <li>
       <a href="/2013/09/04/dubstep-machine.html">The Dubstep Machine</a>
+      <br/>
+      <small>04 September 2013</small>
     </li>
   
 </ul>
 
+<h2>Finished Things</h2>
+<p>Here are a few things I've actually finished. Finishing things is good.</p>
+
+<p><a href="http://goodtohear.co.uk/happiness">Happiness Mood Tracking Journal</a> an app to help people understand themselves better.</p>
+
+
+
+
+
+
+<p><a href="http://appstore.com/goodtohear/goodhabits">Good Habits</a> - a very handy app that gets you into the habit of doing things on a daily or weekly basis (such as writing a blog).</p>
+
+<p>These three albums:
+<a href="https://itunes.apple.com/gb/album/broken-into-tumbolia/id277733891">Broken Into Tumbolia</a> - a very eclectic one,
+<a href="https://itunes.apple.com/gb/album/majectical-electical/id286069118">Majectical Electical</a> - a manic 'up' one and
+<a href="https://itunes.apple.com/gb/album/psychogenic-fugue-state/id284446382">Psychogenic Fugue State</a> - a dark, cathartic one.</p>
+
+
+
+
+
+
+<h2>Other Credits</h2>
 <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
 
         </aside>
