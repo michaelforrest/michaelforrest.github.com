@@ -1,4 +1,5 @@
 h1,h2,h3,h4,h5,h6,a.button{font-family:Sketchetik-Light !important;font-weight:normal !important;font-style:normal !important}
+aside#sidebar h2{font-size:200%}
 aside.meta dl{padding:0;margin:0}
 @media only screen and (max-width: 767px){dl{display:block;float:left;width:30%}
 iframe.youtube{width:100%;height:300px}
