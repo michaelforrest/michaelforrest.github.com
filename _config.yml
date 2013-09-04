@@ -1,2 +1,7 @@
-name: "mf://TODO"
+title: "mf://TODO"
+subtitle: "Michael Forrest's Museum of Unfinished Projects"
 pygments: true
+exclude: ['designs']
+stylus:
+  compress: true
+  path: /usr/local/share/npm/bin/stylus
