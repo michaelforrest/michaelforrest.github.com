@@ -12,7 +12,7 @@ status: Pending Inspiration
 video: C82l99LhN94
 completeness: 40%
 time_required: About two solid weeks' work
-
+og_image: http://img.youtube.com/vi/C82l99LhN94/0.jpg
 
 ---
 

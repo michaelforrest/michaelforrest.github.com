@@ -2,7 +2,10 @@
 <html>
   <head>
     {% include head_content.html %}
-    <title>{{page.title}}</title>
+    <title>{{site.title}}{{page.title}}</title>
+
+    <meta content="{{page.og_image}}" property="og:image" />
+
   </head>
 
   <body>
@@ -46,6 +49,8 @@
           <iframe class="youtube" src="//www.youtube.com/embed/{{page.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
 
           {{ content }}
+
+          <div class="fb-comments" data-href="{{page.url}}" data-width="470"></div>
         </section>
 
         <aside id="sidebar">
