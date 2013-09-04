@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     {% include head_content.html %}
+    <title>Michael Forrest's Museum Of Unfinished Projects</title>  
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>mf://TODO</h1>
+        <h2>Michael Forrest's Museumof Unfinished Projects</h2>
+        <a href="https://github.com/michaelforrest" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </section>
+
+        <aside id="sidebar">
+          {% include sidebar_content.html %}
+         </aside>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+
+  </body>
+</html>
