@@ -2,7 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 
-deploy_branch  = "gh-pages"
+deploy_branch  = "master"
 
 ## -- Misc Configs -- ##
 
