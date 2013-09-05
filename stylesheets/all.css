@@ -2,6 +2,7 @@ h1,h2,h3,h4,h5,h6,a.button{font-family:Sketchetik-Light !important;font-weight:n
 h1 a{color:#fff;}
 h1 a:hover{color:#a6c4f3}
 h1,h2{line-height:1em}
+#main-content h3{color:#2564bf}
 ul li,ol li{list-style:disc;padding-left:0}
 em{font-style:italic}
 header{padding-top:20px;padding-bottom:20px}
