@@ -4,6 +4,7 @@ title: "mf://TODO Home"
 ---
 {% for post in site.posts %}
   <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+  {% include sharing.html page=post %}
   <aside class="meta">
     <dl>
       <dt>Started:</dt>
