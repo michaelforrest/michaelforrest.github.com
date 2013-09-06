@@ -56,28 +56,23 @@
           <h1>{{ page.title }}</h1>
           {% include sharing.html page=page %}
           <aside class="meta">
- 			<dl>
-				<dt>Progress:</dt>
-				<dd><div id='progress_chart'></div></dd>
-			</dl>
             <dl>
-              <dt>Started:</dt>
+			  <dt>Started:</dt>
               <dd>{{ page.started_on }}
-            </dl>
-            <dl>
               <dt>Last updated:</dt>
               <dd>{{ page.last_updated_on }}
-            </dl>
-            <dl class="time_required">
               <dt>Finishable in:</dt>
               <dd>{{page.time_required}}</dd>
             </dl>
-           <dl>
+         	<dl class='progress'>
+				<dt>Progress:</dt>
+				<dd><div id='progress_chart'></div></dd>
+			</dl>
+             <dl>
               <dt>Status:</dt>
               <dd><img src="/images/status/{{ page.status | handleize }}.png" alt="{{ page.status }}"/></dd>
             </dl>
-            
-          </aside>
+           </aside>
           <iframe class="youtube" src="//www.youtube.com/embed/{{page.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
           {{ content }}
           {% include sharing.html page=page %}
