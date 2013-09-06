@@ -5,7 +5,33 @@
     <title>{{site.title}}{{page.title}}</title>
 
     <meta content="{{page.og_image}}" property="og:image" />
-
+	<script type="text/javascript">
+		google.setOnLoadCallback(function(){
+			var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
+			var data = google.visualization.arrayToDataTable([
+				['Task', 'Progress'],
+				{% for line in page.progress %}
+					['{{line.title}}',{{line.value}}],
+				{% endfor %}
+			]);
+			var options = {
+				pieHole: 0.4, 
+				legend:'none',
+				colors:[
+					'#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
+					],
+				chartArea:{left:10,top:10,width:120,height:120},
+				width: 140, 
+				height:140,
+				pieSliceText: 'none',
+				tooltip: {
+					text: 'percentage'
+				}
+			};
+			chart.draw(data,options);
+		});
+	</script>
+	
   </head>
 
   <body>
@@ -30,6 +56,10 @@
           <h1>{{ page.title }}</h1>
           {% include sharing.html page=page %}
           <aside class="meta">
+ 			<dl>
+				<dt>Progress:</dt>
+				<dd><div id='progress_chart'></div></dd>
+			</dl>
             <dl>
               <dt>Started:</dt>
               <dd>{{ page.started_on }}
@@ -42,7 +72,7 @@
               <dt>Finishable in:</dt>
               <dd>{{page.time_required}}</dd>
             </dl>
-            <dl>
+           <dl>
               <dt>Status:</dt>
               <dd><img src="/images/status/{{ page.status | handleize }}.png" alt="{{ page.status }}"/></dd>
             </dl>
@@ -50,9 +80,11 @@
           </aside>
           <iframe class="youtube" src="//www.youtube.com/embed/{{page.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
 
+  			<p>Progress:{{ page.progress }}</p>
+			
           {{ content }}
           {% include sharing.html page=page %}
-          <div class="fb-comments" data-href="{{page.url}}" data-width="470"></div>
+          <div class="fb-comments" data-href="http://michaelforrest.github.io{{page.url}}" data-width="470"></div>
         </section>
 
         <aside id="sidebar">

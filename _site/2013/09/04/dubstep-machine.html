@@ -15,10 +15,48 @@
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<!-- google charts -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+</script>
+
     <title>mf://TODO/1. The Dubstep Machine</title>
 
     <meta content="http://img.youtube.com/vi/C82l99LhN94/0.jpg" property="og:image" />
-
+	<script type="text/javascript">
+		google.setOnLoadCallback(function(){
+			var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
+			var data = google.visualization.arrayToDataTable([
+				['Task', 'Progress'],
+				
+					['Completed',0.4],
+				
+					['Audio',0.1],
+				
+					['Graphic Design',0.2],
+				
+					['Coding',0.3],
+				
+			]);
+			var options = {
+				pieHole: 0.4, 
+				legend:'none',
+				colors:[
+					'#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
+					],
+				chartArea:{left:10,top:10,width:120,height:120},
+				width: 140, 
+				height:140,
+				pieSliceText: 'none',
+				tooltip: {
+					text: 'percentage'
+				}
+			};
+			chart.draw(data,options);
+		});
+	</script>
+	
   </head>
 
   <body>
@@ -52,6 +90,10 @@
   <div class="fb-like" data-href="http://michaelforrest.github.io/2013/09/04/dubstep-machine.html" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div>
 </div>
           <aside class="meta">
+ 			<dl>
+				<dt>Progress:</dt>
+				<dd><div id='progress_chart'></div></dd>
+			</dl>
             <dl>
               <dt>Started:</dt>
               <dd>Late November 2011
@@ -64,7 +106,7 @@
               <dt>Finishable in:</dt>
               <dd>About two solid weeks' work</dd>
             </dl>
-            <dl>
+           <dl>
               <dt>Status:</dt>
               <dd><img src="/images/status/pending-inspiration.png" alt="Pending Inspiration"/></dd>
             </dl>
@@ -72,6 +114,8 @@
           </aside>
           <iframe class="youtube" src="//www.youtube.com/embed/C82l99LhN94?rel=0" frameborder="0" allowfullscreen></iframe>
 
+  			<p>Progress:{"title"=>"Completed", "value"=>0.4}{"title"=>"Audio", "value"=>0.1}{"title"=>"Graphic Design", "value"=>0.2}{"title"=>"Coding", "value"=>0.3}</p>
+			
           <p>Here is something I started a couple of years ago when dubstep still seemed quite cool.</p>
 
 <p>I was searching for the secret to making those types of musical progressions and came up with this app for interactively toggling and tuning tempo-locked loops. The visual aspect was important to me - I wanted to make sure there was always accurate graphical feedback tightly synchronised to the sound a la <a href='http://youtu.be/TIS8YWfUvB8'>Teenage Engineering OP-1</a>. I built this prototype in about a day but then I stalled…</p>
@@ -106,7 +150,7 @@
           <div class="sharing">
   <div class="fb-like" data-href="http://michaelforrest.github.io/2013/09/04/dubstep-machine.html" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div>
 </div>
-          <div class="fb-comments" data-href="/2013/09/04/dubstep-machine.html" data-width="470"></div>
+          <div class="fb-comments" data-href="http://michaelforrest.github.io/2013/09/04/dubstep-machine.html" data-width="470"></div>
         </section>
 
         <aside id="sidebar">

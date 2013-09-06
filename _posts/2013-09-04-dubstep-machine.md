@@ -10,9 +10,19 @@ started_on: Late November 2011
 last_updated_on: January 2013
 status: Pending Inspiration
 video: C82l99LhN94
-completeness: 40%
 time_required: About two solid weeks' work
 og_image: http://img.youtube.com/vi/C82l99LhN94/0.jpg
+
+progress:
+  - title: Completed
+    value: 0.4
+  - title: Audio
+    value: 0.1
+  - title: Graphic Design
+    value: 0.2
+  - title: Coding
+    value: 0.3
+
 
 ---
 
