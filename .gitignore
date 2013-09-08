@@ -1,1 +1,3 @@
 _deploy
+*.swp
+_site

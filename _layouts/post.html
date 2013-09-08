@@ -4,34 +4,34 @@
     {% include head_content.html %}
     <title>{{site.title}}{{page.title}}</title>
 
-    <meta content="{{page.og_image}}" property="og:image" />
-	<script type="text/javascript">
-		google.setOnLoadCallback(function(){
-			var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
-			var data = google.visualization.arrayToDataTable([
-				['Task', 'Progress'],
-				{% for line in page.progress %}
-					['{{line.title}}',{{line.value}}],
-				{% endfor %}
-			]);
-			var options = {
-				pieHole: 0.4, 
-				legend:'none',
-				colors:[
-					'#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
-					],
-				chartArea:{left:10,top:10,width:120,height:120},
-				width: 140, 
-				height:140,
-				pieSliceText: 'none',
-				tooltip: {
-					text: 'percentage'
-				}
-			};
-			chart.draw(data,options);
-		});
-	</script>
-	
+    <meta content="http://img.youtube.com/vi/{{page.video}}/0.jpg" property="og:image" />
+    <script type="text/javascript">
+      google.setOnLoadCallback(function(){
+        var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Progress'],
+          {% for line in page.progress %}
+            ['{{line.title}}',{{line.value}}],
+          {% endfor %}
+        ]);
+        var options = {
+          pieHole: 0.4, 
+          legend:'none',
+          colors:[
+            '#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
+            ],
+          chartArea:{left:10,top:10,width:120,height:120},
+          width: 140, 
+          height:140,
+          pieSliceText: 'none',
+          tooltip: {
+            text: 'percentage'
+          }
+        };
+        chart.draw(data,options);
+      });
+    </script>
+    
   </head>
 
   <body>
@@ -64,7 +64,7 @@
               <dt>Finishable in:</dt>
               <dd>{{page.time_required}}</dd>
             </dl>
-         	<dl class='progress'>
+         	<dl class='pie'>
 				<dt>Progress:</dt>
 				<dd><div id='progress_chart'></div></dd>
 			</dl>

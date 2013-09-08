@@ -11,7 +11,6 @@ last_updated_on: January 2013
 status: Pending Inspiration
 video: C82l99LhN94
 time_required: About two solid weeks' work
-og_image: http://img.youtube.com/vi/C82l99LhN94/0.jpg
 
 progress:
   - title: Completed
