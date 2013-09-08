@@ -5,24 +5,7 @@ title: "mf://TODO Home"
 {% for post in site.posts %}
   <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
   {% include sharing.html page=post %}
-  <aside class="meta">
-    <dl>
-      <dt>Started:</dt>
-      <dd>{{ post.started_on }}
-    </dl>
-    <dl>
-      <dt>Last updated:</dt>
-      <dd>{{ post.last_updated_on }}
-    </dl>
-    <dl class="time_required">
-      <dt>Finishable in:</dt>
-      <dd>{{post.time_required}}</dd>
-    </dl>
-    <dl>
-      <dt>Status:</dt>
-      <dd><img src="/images/status/{{ post.status | handleize }}.png" alt="{{ post.status }}"/></dd>
-    </dl>
-  </aside>
+  {% include post_meta.html post=post %}
   <iframe class="youtube" src="//www.youtube.com/embed/{{post.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
   {{ post.excerpt }}
   <p>

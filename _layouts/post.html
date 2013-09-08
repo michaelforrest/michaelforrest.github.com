@@ -7,28 +7,31 @@
     <meta content="http://img.youtube.com/vi/{{page.video}}/0.jpg" property="og:image" />
     <script type="text/javascript">
       google.setOnLoadCallback(function(){
-        var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Progress'],
-          {% for line in page.progress %}
-            ['{{line.title}}',{{line.value}}],
-          {% endfor %}
-        ]);
-        var options = {
-          pieHole: 0.4, 
-          legend:'none',
-          colors:[
-            '#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
-            ],
-          chartArea:{left:10,top:10,width:120,height:120},
-          width: 140, 
-          height:140,
-          pieSliceText: 'none',
-          tooltip: {
-            text: 'percentage'
-          }
-        };
-        chart.draw(data,options);
+       $(".progress_chart").each(function(){ 
+          var chart = new google.visualization.PieChart(this);
+          var titles = $(this).data("titles").split(',');
+          var values = $(this).data("values").split(',')
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Tasks');
+          data.addColumn('number', 'Progress');
+          for (i = 0; i < titles.length; i++)
+              data.addRow([titles[i], parseFloat(values[i])]);
+          var options = {
+            pieHole: 0.4, 
+            legend:'none',
+            colors:[
+              '#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
+              ],
+            chartArea:{left:10,top:10,width:120,height:120},
+            width: 140, 
+            height:140,
+            pieSliceText: 'none',
+            tooltip: {
+              text: 'percentage'
+            }
+          };
+          chart.draw(data,options);
+        });
       });
     </script>
     
@@ -55,24 +58,7 @@
         <section id="main-content">
           <h1>{{ page.title }}</h1>
           {% include sharing.html page=page %}
-          <aside class="meta">
-            <dl>
-			  <dt>Started:</dt>
-              <dd>{{ page.started_on }}
-              <dt>Last updated:</dt>
-              <dd>{{ page.last_updated_on }}
-              <dt>Finishable in:</dt>
-              <dd>{{page.time_required}}</dd>
-            </dl>
-         	<dl class='pie'>
-				<dt>Progress:</dt>
-				<dd><div id='progress_chart'></div></dd>
-			</dl>
-             <dl>
-              <dt>Status:</dt>
-              <dd><img src="/images/status/{{ page.status | handleize }}.png" alt="{{ page.status }}"/></dd>
-            </dl>
-           </aside>
+          {% include post_meta.html post=page %}
           <iframe class="youtube" src="//www.youtube.com/embed/{{page.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
           {{ content }}
           {% include sharing.html page=page %}

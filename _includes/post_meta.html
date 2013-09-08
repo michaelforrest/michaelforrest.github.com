@@ -1,0 +1,25 @@
+ <aside class="meta">
+  <dl>
+    <dt>Started:</dt>
+    <dd>{{ include.post.started_on }}
+    <dt>Last updated:</dt>
+    <dd>{{ include.post.last_updated_on }}
+    <dt>Finishable in:</dt>
+    <dd>{{include.post.time_required}}</dd>
+  </dl>
+  <dl class='pie'>
+
+    <dt>Progress:</dt>
+    <dd>
+      <div class='progress_chart'
+            data-titles='{{ include.post.progress | map: "title" | join: ',' }}'
+            data-values='{{ include.post.progress | map: "value" | join: ',' }}'
+        > </div>
+      </dd>
+  </dl>
+  <dl>
+    <dt>Status:</dt>
+    <dd><img src="/images/status/{{ include.post.status | handleize }}.png" alt="{{ include.post.status }}"/></dd>
+  </dl>
+</aside>
+
