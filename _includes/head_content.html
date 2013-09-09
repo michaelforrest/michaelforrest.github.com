@@ -30,11 +30,13 @@
       data.addColumn('number', 'Progress');
       for (i = 0; i < titles.length; i++)
           data.addRow([titles[i], parseFloat(values[i])]);
+      var done = '#68BB48';
+      var pending = '#BC4340';//'#6188C0';
       var options = {
         pieHole: 0.4, 
         legend:'none',
         colors:[
-          '#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
+          done,pending,pending,pending,pending,pending,pending
           ],
         chartArea:{left:10,top:10,width:120,height:120},
         width: 140, 

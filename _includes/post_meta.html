@@ -19,7 +19,9 @@
   </dl>
   <dl>
     <dt>Status:</dt>
+    {% if include.post.status %}
     <dd><img src="/images/status/{{ include.post.status | handleize }}.png" alt="{{ include.post.status }}"/></dd>
+    {% endif %}
   </dl>
 </aside>
 

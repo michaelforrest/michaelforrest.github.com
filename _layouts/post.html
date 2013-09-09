@@ -5,36 +5,7 @@
     <title>{{site.title}}{{page.title}}</title>
 
     <meta content="http://img.youtube.com/vi/{{page.video}}/0.jpg" property="og:image" />
-    <script type="text/javascript">
-      google.setOnLoadCallback(function(){
-       $(".progress_chart").each(function(){ 
-          var chart = new google.visualization.PieChart(this);
-          var titles = $(this).data("titles").split(',');
-          var values = $(this).data("values").split(',')
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Tasks');
-          data.addColumn('number', 'Progress');
-          for (i = 0; i < titles.length; i++)
-              data.addRow([titles[i], parseFloat(values[i])]);
-          var options = {
-            pieHole: 0.4, 
-            legend:'none',
-            colors:[
-              '#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
-              ],
-            chartArea:{left:10,top:10,width:120,height:120},
-            width: 140, 
-            height:140,
-            pieSliceText: 'none',
-            tooltip: {
-              text: 'percentage'
-            }
-          };
-          chart.draw(data,options);
-        });
-      });
-    </script>
-    
+   
   </head>
 
   <body>
