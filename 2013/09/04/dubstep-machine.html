@@ -10,7 +10,10 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/all.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -19,44 +22,43 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 	google.load("visualization", "1", {packages:["corechart"]});
+  
+  google.setOnLoadCallback(function(){
+   $(".progress_chart").each(function(){ 
+      var chart = new google.visualization.PieChart(this);
+      var titles = $(this).data("titles").split(',');
+      var values = $(this).data("values").split(',')
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Tasks');
+      data.addColumn('number', 'Progress');
+      for (i = 0; i < titles.length; i++)
+          data.addRow([titles[i], parseFloat(values[i])]);
+      var done = '#68BB48';
+      var pending = '#BC4340';//'#6188C0';
+      var options = {
+        pieHole: 0.4, 
+        legend:'none',
+        colors:[
+          done,pending,pending,pending,pending,pending,pending
+          ],
+        chartArea:{left:10,top:10,width:120,height:120},
+        width: 140, 
+        height:140,
+        pieSliceText: 'none',
+        tooltip: {
+          text: 'percentage'
+        }
+      };
+      chart.draw(data,options);
+    });
+  });
 </script>
+ 
 
     <title>mf://TODO/1. The Dubstep Machine</title>
 
     <meta content="http://img.youtube.com/vi/C82l99LhN94/0.jpg" property="og:image" />
-	<script type="text/javascript">
-		google.setOnLoadCallback(function(){
-			var chart = new google.visualization.PieChart(document.getElementById('progress_chart'));
-			var data = google.visualization.arrayToDataTable([
-				['Task', 'Progress'],
-				
-					['Completed',0.4],
-				
-					['Audio',0.1],
-				
-					['Graphic Design',0.2],
-				
-					['Coding',0.3],
-				
-			]);
-			var options = {
-				pieHole: 0.4, 
-				legend:'none',
-				colors:[
-					'#68BB48', '#6188C0','#6188C0','#6188C0','#6188C0','#6188C0','#6188C0'
-					],
-				chartArea:{left:10,top:10,width:120,height:120},
-				width: 140, 
-				height:140,
-				pieSliceText: 'none',
-				tooltip: {
-					text: 'percentage'
-				}
-			};
-			chart.draw(data,options);
-		});
-	</script>
-	
+   
   </head>
 
   <body>
@@ -89,24 +91,34 @@
           <div class="sharing">
   <div class="fb-like" data-href="http://michaelforrest.github.io/2013/09/04/dubstep-machine.html" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div>
 </div>
-          <aside class="meta">
-            <dl>
-			  <dt>Started:</dt>
-              <dd>Late November 2011
-              <dt>Last updated:</dt>
-              <dd>January 2013
-              <dt>Finishable in:</dt>
-              <dd>About two solid weeks' work</dd>
-            </dl>
-         	<dl class='progress'>
-				<dt>Progress:</dt>
-				<dd><div id='progress_chart'></div></dd>
-			</dl>
-             <dl>
-              <dt>Status:</dt>
-              <dd><img src="/images/status/pending-inspiration.png" alt="Pending Inspiration"/></dd>
-            </dl>
-           </aside>
+           <aside class="meta">
+  <dl>
+    <dt>Started:</dt>
+    <dd>Late November 2011
+    <dt>Last updated:</dt>
+    <dd>January 2013
+    <dt>Finishable in:</dt>
+    <dd>About two solid weeks' work</dd>
+  </dl>
+  <dl class='pie'>
+
+    <dt>Progress:</dt>
+    <dd>
+      <div class='progress_chart'
+            data-titles='Completed,Audio,Graphic Design,Coding'
+            data-values='0.4,0.1,0.2,0.3'
+        > </div>
+      </dd>
+  </dl>
+  <dl>
+    <dt>Status:</dt>
+    
+    <dd><img src="/images/status/pending-inspiration.png" alt="Pending Inspiration"/></dd>
+    
+  </dl>
+</aside>
+
+
           <iframe class="youtube" src="//www.youtube.com/embed/C82l99LhN94?rel=0" frameborder="0" allowfullscreen></iframe>
           <p>Here is something I started a couple of years ago when dubstep still seemed quite cool.</p>
 
@@ -156,6 +168,12 @@
 </p>
 <h2>Unfinished Things</h2>
 <ul>
+  
+    <li>
+      <a href="/2013/09/11/live-dj-concept.html">2. Live DJ Concept</a>
+      <br/>
+      <small>11 September 2013</small>
+    </li>
   
     <li>
       <a href="/2013/09/04/dubstep-machine.html">1. The Dubstep Machine</a>

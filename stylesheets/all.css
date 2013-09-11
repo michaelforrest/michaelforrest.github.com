@@ -9,6 +9,7 @@ header{padding-top:20px;padding-bottom:20px}
 aside#sidebar h2{font-size:200%}
 aside#sidebar li{list-style:none}
 #progress_chart{margin-left:-10px}
+.more{margin-bottom:20px}
 aside.meta dl{padding:0;margin:0}
 div.sharing{margin-top:10px;margin-bottom:10px}
 @media only screen and (max-width: 767px){dl{display:block;float:left;padding-right:10px}
