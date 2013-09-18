@@ -5,7 +5,8 @@
     <title>{{site.title}}{{page.title}}</title>
 
     <meta content="http://img.youtube.com/vi/{{page.video}}/0.jpg" property="og:image" />
-   
+    <meta property="og:video" content="http://www.youtube.com/v/{{page.video}}">
+
   </head>
 
   <body>
@@ -31,7 +32,9 @@
           {% include sharing.html page=page %}
           {% include post_meta.html post=page %}
           <iframe class="youtube" src="//www.youtube.com/embed/{{page.video}}?rel=0" frameborder="0" allowfullscreen></iframe>
+          <div class="post">
           {{ content }}
+          </div>
           {% include sharing.html page=page %}
           <div class="fb-comments" data-href="http://michaelforrest.github.io{{page.url}}" data-width="470"></div>
         </section>

@@ -6,3 +6,8 @@ stylus:
   compress: true
   path: /usr/local/share/npm/bin/stylus
 excerpt_separator: "\n\n\n\n"
+# used by the feed
+
+name: "mf://TODO by Michael Forrest"
+description: "Michael Forrest's Museum of Unfinished Projects"
+url: http://michaelforrest.github.io
