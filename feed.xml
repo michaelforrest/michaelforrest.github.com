@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title></title>
-		<description></description>
-		<link></link>
-		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		<title>mf://TODO by Michael Forrest</title>
+		<description>Michael Forrest's Museum of Unfinished Projects</description>
+		<link>http://michaelforrest.github.io</link>
+		<atom:link href="http://michaelforrest.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>3. The Fifth Theory</title>
@@ -37,8 +37,8 @@
 &lt;p&gt;Note that my earlier &lt;em&gt;finished&lt;/em&gt; comic &lt;em&gt;What Art Is, To Me&lt;/em&gt; is &lt;a href='http://grimaceworks.com/comics/what_art_is_to_me'&gt;available to read here&lt;/a&gt; and also available as &lt;a href='
 https://itunes.apple.com/gb/app/what-art-is-to-me/id322851225?mt=8'&gt;the first iPhone App I made&lt;/a&gt;.&lt;/p&gt;</description>
 				<pubDate>Wed, 18 Sep 2013 00:00:00 +0100</pubDate>
-				<link>/2013/09/18/the-fifth-theory.html</link>
-				<guid isPermaLink="true">/2013/09/18/the-fifth-theory.html</guid>
+				<link>http://michaelforrest.github.io/2013/09/18/the-fifth-theory.html</link>
+				<guid isPermaLink="true">http://michaelforrest.github.io/2013/09/18/the-fifth-theory.html</guid>
 			</item>
 		
 			<item>
@@ -77,8 +77,8 @@ https://itunes.apple.com/gb/app/what-art-is-to-me/id322851225?mt=8'&gt;the first
 
 &lt;p&gt;If anybody finds this blog post inspiring, sure. I&amp;#8217;m happy to share assets or get involved in any other way if anybody else thinks this concept, or something similar, has legs.&lt;/p&gt;</description>
 				<pubDate>Wed, 11 Sep 2013 00:00:00 +0100</pubDate>
-				<link>/2013/09/11/live-dj-concept.html</link>
-				<guid isPermaLink="true">/2013/09/11/live-dj-concept.html</guid>
+				<link>http://michaelforrest.github.io/2013/09/11/live-dj-concept.html</link>
+				<guid isPermaLink="true">http://michaelforrest.github.io/2013/09/11/live-dj-concept.html</guid>
 			</item>
 		
 			<item>
@@ -115,8 +115,8 @@ https://itunes.apple.com/gb/app/what-art-is-to-me/id322851225?mt=8'&gt;the first
 
 &lt;p&gt;I dunno. If you&amp;#8217;re good at music visualisation or iOS programming you could help me get this finished.&lt;/p&gt;</description>
 				<pubDate>Wed, 04 Sep 2013 00:00:00 +0100</pubDate>
-				<link>/2013/09/04/dubstep-machine.html</link>
-				<guid isPermaLink="true">/2013/09/04/dubstep-machine.html</guid>
+				<link>http://michaelforrest.github.io/2013/09/04/dubstep-machine.html</link>
+				<guid isPermaLink="true">http://michaelforrest.github.io/2013/09/04/dubstep-machine.html</guid>
 			</item>
 		
 	</channel>
