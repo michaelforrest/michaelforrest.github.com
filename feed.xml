@@ -7,6 +7,38 @@
 		<atom:link href="http://michaelforrest.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>4. Dinosaurs App</title>
+				<description>&lt;h3 id='what_is_it'&gt;What is it?&lt;/h3&gt;
+
+&lt;p&gt;This was going to be an iPhone app for kids. I started it after I&amp;#8217;d made some progress on my &amp;#8220;PuppetGraphics&amp;#8221; inverse kinematics library for iOS after a friend suggested my drawing style might be suitable for a kids&amp;#8217; book.&lt;/p&gt;
+
+&lt;p&gt;Here are some videos that show the asset preparation process so you can get more of an idea of how much technology went into achieving this innocuous little app.&lt;/p&gt;
+
+&lt;p&gt;Making something like this doesn&amp;#8217;t just involve a lot of programming the app itself - it needed additional tools to be programmed to get the graphics into a usable format.&lt;/p&gt;
+
+&lt;h4 id='analogue_phase'&gt;Analogue phase:&lt;/h4&gt;
+&lt;iframe class='youtube' src='http://www.youtube.com/embed/_x8ISZf1OO4'&gt;  &lt;/iframe&gt;
+&lt;h4 id='digital_phase'&gt;Digital phase:&lt;/h4&gt;
+&lt;iframe class='youtube' src='http://www.youtube.com/embed/dDCY0hwhlQg'&gt;  &lt;/iframe&gt;
+&lt;h3 id='what_happened'&gt;What happened?&lt;/h3&gt;
+
+&lt;p&gt;This was challenging on a technical and artistic level and I just never really found the time to solve the issues. I had some maths to work out for the animation engine, and the whole thing was built using low-level OpenGL apis rather than nice friendly UIView / CALayer apis (which I now regret). And then I failed to find time to finish all the artwork. I need backgrounds you see.&lt;/p&gt;
+
+&lt;h3 id='has_anything_changed_since_then'&gt;Has anything changed since then?&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;ve written a lot more iOS apps so I have a much deeper understanding of all the performance tradeoffs of using different APIs.&lt;/p&gt;
+
+&lt;p&gt;My father (Richard Forrest of &lt;a href='http://plesiousaur.com'&gt;plesiosaur.com&lt;/a&gt;) showed me the beautiful paleo-art of &lt;a href='http://johnconway.co'&gt;John Conway&lt;/a&gt; which puts my illustrations to shame.&lt;/p&gt;
+
+&lt;h3 id='can_it_be_revived'&gt;Can it be revived?&lt;/h3&gt;
+
+&lt;p&gt;There&amp;#8217;s no reason why I couldn&amp;#8217;t spend a few days finishing this off. It&amp;#8217;s just a matter of priorities.&lt;/p&gt;</description>
+				<pubDate>Wed, 25 Sep 2013 00:00:00 +0100</pubDate>
+				<link>http://michaelforrest.github.io/2013/09/25/dinosaurs-app.html</link>
+				<guid isPermaLink="true">http://michaelforrest.github.io/2013/09/25/dinosaurs-app.html</guid>
+			</item>
+		
+			<item>
 				<title>3. The Fifth Theory</title>
 				<description>&lt;p&gt;This is an autobiographical, philosophical comic I started a few years ago. everything is hand drawn on paper in a linear process.&lt;/p&gt;
 
