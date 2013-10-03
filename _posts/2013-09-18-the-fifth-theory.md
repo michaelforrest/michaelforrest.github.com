@@ -57,3 +57,4 @@ The way I made it means I'm reluctant to take it apart and restructure it digita
 Note that my earlier *finished* comic *What Art Is, To Me* is [available to read here](http://grimaceworks.com/comics/what_art_is_to_me) and also available as [the first iPhone App I made](
 https://itunes.apple.com/gb/app/what-art-is-to-me/id322851225?mt=8).
 
+
