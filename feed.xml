@@ -7,6 +7,104 @@
 		<atom:link href="http://michaelforrest.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>5. Done Good</title>
+				<description>&lt;h3 id='what_is_it'&gt;What is it?&lt;/h3&gt;
+
+&lt;p&gt;In June last year I decided it was time to make &lt;em&gt;Good To Hear&lt;/em&gt; next product, learning from what I&amp;#8217;d discovered while working on &lt;a href='http://goodtohear.co.uk/happiness'&gt;Happiness&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;d been using &lt;em&gt;Happiness&lt;/em&gt; and its antecedents for a few years and knew I had something that was capable of preventing depression but wasn&amp;#8217;t necessarily capable of making people happy. I wanted to find a way to help people be happy. Through software.&lt;/p&gt;
+
+&lt;p&gt;The answer was something I&amp;#8217;d arrived at via a number of routes. There are a lot of things we can&amp;#8217;t control but the one guaranteed way to make onesself happy is to put other people first. Altruism.&lt;/p&gt;
+
+&lt;p&gt;What could I make to encourage people to help each other?&lt;/p&gt;
+
+&lt;h3 id='how_to_make_something_viral'&gt;How to make something viral&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;d recently observed something I&amp;#8217;d made going viral (the &amp;#8216;dickheadometer&amp;#8217; - a quiz that tells you how much of a hipster you are - hitting 50,000 views in under a week). Here are some things I was looking for to bring similar success to the next thing I made. I needed something:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Personal&lt;/li&gt;
+
+&lt;li&gt;Shareable&lt;/li&gt;
+
+&lt;li&gt;Where people who are not doing it should feel like they are missing out&lt;/li&gt;
+
+&lt;li&gt;Collectable&lt;/li&gt;
+
+&lt;li&gt;Creating some kind of social obligation&lt;/li&gt;
+
+&lt;li&gt;Socially validating&lt;/li&gt;
+
+&lt;li&gt;Including some sort of monetisation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also knew I&amp;#8217;d need to start with a web app rather than an iPhone app this time.&lt;/p&gt;
+
+&lt;h3 id='karma_bank'&gt;Karma Bank&lt;/h3&gt;
+
+&lt;p&gt;I could cover all these bases with the idea of a &amp;#8216;karma bank&amp;#8217;. A social network where you are seen helping people (and seen &lt;em&gt;not&lt;/em&gt; helping people). Competitive altruism combining the encouragment of the happiness you get from helping someone else, with some guilt-tripping on the other side. &amp;#8220;Michael has not helped anyone for 8 days&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;It was a system for keeping score. A &lt;em&gt;Runkeeper&lt;/em&gt; for selfless acts. I wanted to make this part of people&amp;#8217;s routine, and I could see the world becoming a much better place for it.&lt;/p&gt;
+
+&lt;p&gt;Some people might say &amp;#8220;if you only helped someone to grow your karma bank balance then it doesn&amp;#8217;t count&amp;#8221;. I couldn&amp;#8217;t disagree more. It doesn&amp;#8217;t matter why you help someone, it only matters that you help.&lt;/p&gt;
+
+&lt;h3 id='the_first_wireframes'&gt;The first wireframes&lt;/h3&gt;
+
+&lt;p&gt;I started out with a strong idea for a structure, including monetisation angles (via &amp;#8216;promoted&amp;#8217; deeds - because a company doing good is just as valid as an individual doing good). Click on the thumbnails below to see my second draft wireframes. (Use your arrow keys to zip left and right. If you&amp;#8217;re on a tablet the arrows appear when you sort of tap the right edge for now&amp;#8230;)&lt;/p&gt;
+&lt;ul class='gallery thumbnails'&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/1.-Sign-in.png' title='1.-Sign-in'&gt;&lt;img src='/images/karma_bank/1.-Sign-in.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/2.-Profile.png' title='2.-Profile'&gt;&lt;img src='/images/karma_bank/2.-Profile.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/3.-Profile.png' title='3.-Profile'&gt;&lt;img src='/images/karma_bank/3.-Profile.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/4.-Good-deed-detail.png' title='4.-Good-deed-detail'&gt;&lt;img src='/images/karma_bank/4.-Good-deed-detail.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/5.-Good-deed-feed.png' title='5.-Good-deed-feed'&gt;&lt;img src='/images/karma_bank/5.-Good-deed-feed.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/5.-Settings.png' title='5.-Settings'&gt;&lt;img src='/images/karma_bank/5.-Settings.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/5.1-Invite-by-email.png' title='5.1-Invite-by-email'&gt;&lt;img src='/images/karma_bank/5.1-Invite-by-email.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/5.2-Invite.png' title='5.2-Invite'&gt;&lt;img src='/images/karma_bank/5.2-Invite.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/6.-New-deed.png' title='6.-New-deed'&gt;&lt;img src='/images/karma_bank/6.-New-deed.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/7.-Paid-good-deeds.png' title='7.-Paid-good-deeds'&gt;&lt;img src='/images/karma_bank/7.-Paid-good-deeds.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/7.1-Card-details.png' title='7.1-Card-details'&gt;&lt;img src='/images/karma_bank/7.1-Card-details.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/8.-API-documentation.png' title='8.-API-documentation'&gt;&lt;img src='/images/karma_bank/8.-API-documentation.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/8.1.-Badges.png' title='8.1.-Badges'&gt;&lt;img src='/images/karma_bank/8.1.-Badges.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/9.-Facebook-integration.png' title='9.-Facebook-integration'&gt;&lt;img src='/images/karma_bank/9.-Facebook-integration.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/9.-Web-home.png' title='9.-Web-home'&gt;&lt;img src='/images/karma_bank/9.-Web-home.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/karma_bank/9.1-Good-deed-landing-page.png' title='9.1-Good-deed-landing-page'&gt;&lt;img src='/images/karma_bank/9.1-Good-deed-landing-page.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;I felt that a literal numerical score for your &amp;#8216;bank balance&amp;#8217; would be too easily gamed and was not entirely in the desired altruistic spirit. I wanted to find a softer way to keep score.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;#8217;t want to be working all on my own this time so I assembled a room full of creative and technical people, bought them some drinks, and we brainstormed ideas around my concept.&lt;/p&gt;
+
+&lt;p&gt;One breakthrough idea was to use the idea of climbing a ladder and being able to see others&amp;#8217; progress as they climbed their own, with all sorts of other things happening up in the sky. It might have been like &lt;em&gt;Tiny Tower&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id='the_done_good_tree'&gt;The Done Good Tree&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt='First Tree Sketch' src='/images/donegood/first_tree_sketch.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wanted to get away from any possible religious connotations with the name, so Karma Bank was never meant to stay. &lt;a href='http://matthewkempton.co.uk/' target='_blank'&gt;Matt Kempton&lt;/a&gt; came through with the name &amp;#8220;Done Good&amp;#8221; which perfectly hit the tone I wanted.&lt;/p&gt;
+
+&lt;p&gt;Then I realised that a &lt;em&gt;tree&lt;/em&gt; was my ideal metaphor for the concept. Good deeds could grow branches, commentary could grow leaves, likes could grow fruit. A bragger would have a thicket of brown branches, others would have a healthy green orchard. People who were really trying would have a tree adorned with different kinds of colourful fruit.&lt;/p&gt;
+
+&lt;h3 id='graphic_design'&gt;Graphic design&lt;/h3&gt;
+
+&lt;p&gt;I stole some time here and there to get some help from Matt and others to figure out an appealing graphic design style for the site. I ended up settling on a sort of vibrant pixel art style, particularly inspired by the artwork in &lt;a href='http://polytroncorporation.com/what-is-fez'&gt;Fez&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The site needed to work well on mobile so all the layouts needed to adapt to small screen sizes. You can see some of the screens I started with below:&lt;/p&gt;
+&lt;ul class='gallery thumbnails'&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/donegood_designs/1. Feed.png' title='1. Feed'&gt;&lt;img src='/images/donegood_designs/1. Feed.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/donegood_designs/2. Profile.png' title='2. Profile'&gt;&lt;img src='/images/donegood_designs/2. Profile.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class='thumbnail'&gt;&lt;a href='/images/donegood_designs/3. Tree stages.png' title='3. Tree stages'&gt;&lt;img src='/images/donegood_designs/3. Tree stages.png' /&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;When I&amp;#8217;m working alone I don&amp;#8217;t usually spend longer than I have to in Photoshop. At a certain point it becomes quicker to experiment with HTML and CSS.&lt;/p&gt;
+
+&lt;h3 id='development'&gt;Development&lt;/h3&gt;
+
+&lt;p&gt;I held out longer than I usually do before writing any code, but eventually it was time to bite the bullet. I was enamoured with &lt;a href='http://meteor.com'&gt;Meteor&lt;/a&gt; (and still am) so even though certain features of that particular framework were still a long way off, I knew that I&amp;#8217;d be able to get something up and running with the minimum of code if I used this platform.&lt;/p&gt;
+
+&lt;p&gt;It was quite complex to test since it was so social. I was working with various fake Facebook users (as you can see by the video demo) to ensure that stories came through to people&amp;#8217;s feeds appropriately. All comments and likes on Facebook propagated to the feed in the Done Good app and vice versa.&lt;/p&gt;
+
+&lt;h3 id='so_what_happened'&gt;So what happened?&lt;/h3&gt;
+
+&lt;p&gt;I got the site to a certain point but then I ran out of money and had to take on freelance work. I didn&amp;#8217;t want to release anything if I didn&amp;#8217;t have time to support it, and for a few months I was too busy to do so.&lt;/p&gt;
+
+&lt;p&gt;So the site lives in a sort of nearly-finished form, with just enough usability problems that I&amp;#8217;m reluctant to share it.&lt;/p&gt;
+
+&lt;h3 id='has_anything_happened_since_then'&gt;Has anything happened since then?&lt;/h3&gt;
+
+&lt;p&gt;I attended a &amp;#8221;&lt;a href='http://happathon.com/'&gt;H(app)athon&lt;/a&gt;&amp;#8221; and found myself facilitating a brainstorm on the subject of improving happiness. We all seemed to latch onto the idea of competitive altruism but here we framed it more as a process of &lt;em&gt;thanking&lt;/em&gt; than bragging. &lt;a href='http://arincrumley.wordpress.com/'&gt;Arin Crumley&lt;/a&gt; came up with the name &amp;#8220;Thank Bank&amp;#8221; and we pitched this concept to a room full of people and the consensus was that is was a great idea.&lt;/p&gt;
+
+&lt;p&gt;A few of us have stayed in touch and we had some ideas about pursuing this, although there are other similar projects emerging, such as &lt;a href='http://impossible.com'&gt;Impossible&lt;/a&gt;, something Jimmy Wales of Wikipedia fame has been involved in.&lt;/p&gt;
+
+&lt;h3 id='can_it_be_revived'&gt;Can it be revived?&lt;/h3&gt;
+
+&lt;p&gt;If I were to revisit this app, I&amp;#8217;d remove the ability to share your own good deeds in favour of making it a platform where people could thank each other. I think the &lt;em&gt;Thank Bank&lt;/em&gt; is a much better way of looking at it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;d really like to see this thing exist, but it might be a few years before I come back to it. Currently my priorities are elsewhere.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ll say this though: ever since I came up with this idea I&amp;#8217;ve been trying to prioritise helping others over helping myself whereever I can. I have found myself leading a much happier life as a result.&lt;/p&gt;</description>
+				<pubDate>Fri, 04 Oct 2013 00:00:00 +0100</pubDate>
+				<link>http://michaelforrest.github.io/2013/10/04/donegood.html</link>
+				<guid isPermaLink="true">http://michaelforrest.github.io/2013/10/04/donegood.html</guid>
+			</item>
+		
+			<item>
 				<title>4. Dinosaurs App</title>
 				<description>&lt;h3 id='what_is_it'&gt;What is it?&lt;/h3&gt;
 

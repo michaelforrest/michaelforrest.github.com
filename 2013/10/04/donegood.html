@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/MyFontsWebfontsKit.css">
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/all.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google charts -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+  
+  google.setOnLoadCallback(function(){
+   $(".progress_chart").each(function(){ 
+      var chart = new google.visualization.PieChart(this);
+      var titles = $(this).data("titles").split(',');
+      var values = $(this).data("values").split(',')
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Tasks');
+      data.addColumn('number', 'Progress');
+      for (i = 0; i < titles.length; i++)
+          data.addRow([titles[i], parseFloat(values[i])]);
+      var done = '#68BB48';
+      var pending = '#BC4340';//'#6188C0';
+      var options = {
+        pieHole: 0.4, 
+        legend:'none',
+        colors:[
+          done,pending,pending,pending,pending,pending,pending
+          ],
+        chartArea:{left:10,top:10,width:120,height:120},
+        width: 140, 
+        height:140,
+        pieSliceText: 'none',
+        tooltip: {
+          text: 'percentage'
+        }
+      };
+      chart.draw(data,options);
+    });
+  });
+</script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript" src="/javascripts/main.js"></script>
+
+    <title>mf://TODO/5. Done Good</title>
+
+    <meta content="http://img.youtube.com/vi/e6Nnw2Nu1M0/0.jpg" property="og:image" />
+    <meta property="og:video" content="http://www.youtube.com/v/e6Nnw2Nu1M0">
+
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=170078826515753";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+      <div class="inner">
+        <h1><a href="/">mf://TODO/</a></h1>
+        <h2>Michael Forrest's Museum of Unfinished Projects</h2>
+        <!-- <a href="https://github.com/michaelforrest" class="button"><small>Follow me on</small>GitHub</a> -->
+        <aside class="social">
+          <a href="https://twitter.com/michaelforrest" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @michaelforrest</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <div class="fb-like" data-href="https://www.facebook.com/MichaelForrestBlog" data-send="true" data-width="200" data-show-faces="true"></div>
+        </aside>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        
+        <section id="main-content">
+          <h1>5. Done Good</h1>
+          <div class="sharing">
+  <div class="fb-like" data-href="http://michaelforrest.github.io/2013/10/04/donegood.html" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div>
+</div>
+           <aside class="meta">
+  <dl>
+    <dt>Started:</dt>
+    <dd>June 2012
+    <dt>Last updated:</dt>
+    <dd>November 2012
+    <dt>Finishable in:</dt>
+    <dd>weeks</dd>
+  </dl>
+  <dl class='pie'>
+
+    <dt>Progress:</dt>
+    <dd>
+      <div class='progress_chart'
+            data-titles='Completed,Development,Design,Marketing, etc...'
+            data-values='0.5,0.3,0.2,0.1'
+        > </div>
+      </dd>
+  </dl>
+  <dl>
+    <dt>Status:</dt>
+    
+    <dd><img src="/images/status/reluctantly-abandoned.png" alt="Reluctantly Abandoned"/></dd>
+    
+  </dl>
+</aside>
+
+
+          <iframe class="youtube" src="//www.youtube.com/embed/e6Nnw2Nu1M0?rel=0" frameborder="0" allowfullscreen></iframe>
+          <div class="post">
+          <h3 id='what_is_it'>What is it?</h3>
+
+<p>In June last year I decided it was time to make <em>Good To Hear</em> next product, learning from what I&#8217;d discovered while working on <a href='http://goodtohear.co.uk/happiness'>Happiness</a>.</p>
+
+<p>I&#8217;d been using <em>Happiness</em> and its antecedents for a few years and knew I had something that was capable of preventing depression but wasn&#8217;t necessarily capable of making people happy. I wanted to find a way to help people be happy. Through software.</p>
+
+<p>The answer was something I&#8217;d arrived at via a number of routes. There are a lot of things we can&#8217;t control but the one guaranteed way to make onesself happy is to put other people first. Altruism.</p>
+
+<p>What could I make to encourage people to help each other?</p>
+
+<h3 id='how_to_make_something_viral'>How to make something viral</h3>
+
+<p>I&#8217;d recently observed something I&#8217;d made going viral (the &#8216;dickheadometer&#8217; - a quiz that tells you how much of a hipster you are - hitting 50,000 views in under a week). Here are some things I was looking for to bring similar success to the next thing I made. I needed something:</p>
+
+<ul>
+<li>Personal</li>
+
+<li>Shareable</li>
+
+<li>Where people who are not doing it should feel like they are missing out</li>
+
+<li>Collectable</li>
+
+<li>Creating some kind of social obligation</li>
+
+<li>Socially validating</li>
+
+<li>Including some sort of monetisation</li>
+</ul>
+
+<p>I also knew I&#8217;d need to start with a web app rather than an iPhone app this time.</p>
+
+<h3 id='karma_bank'>Karma Bank</h3>
+
+<p>I could cover all these bases with the idea of a &#8216;karma bank&#8217;. A social network where you are seen helping people (and seen <em>not</em> helping people). Competitive altruism combining the encouragment of the happiness you get from helping someone else, with some guilt-tripping on the other side. &#8220;Michael has not helped anyone for 8 days&#8221;.</p>
+
+<p>It was a system for keeping score. A <em>Runkeeper</em> for selfless acts. I wanted to make this part of people&#8217;s routine, and I could see the world becoming a much better place for it.</p>
+
+<p>Some people might say &#8220;if you only helped someone to grow your karma bank balance then it doesn&#8217;t count&#8221;. I couldn&#8217;t disagree more. It doesn&#8217;t matter why you help someone, it only matters that you help.</p>
+
+<h3 id='the_first_wireframes'>The first wireframes</h3>
+
+<p>I started out with a strong idea for a structure, including monetisation angles (via &#8216;promoted&#8217; deeds - because a company doing good is just as valid as an individual doing good). Click on the thumbnails below to see my second draft wireframes. (Use your arrow keys to zip left and right. If you&#8217;re on a tablet the arrows appear when you sort of tap the right edge for now&#8230;)</p>
+<ul class='gallery thumbnails'><li class='thumbnail'><a href='/images/karma_bank/1.-Sign-in.png' title='1.-Sign-in'><img src='/images/karma_bank/1.-Sign-in.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/2.-Profile.png' title='2.-Profile'><img src='/images/karma_bank/2.-Profile.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/3.-Profile.png' title='3.-Profile'><img src='/images/karma_bank/3.-Profile.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/4.-Good-deed-detail.png' title='4.-Good-deed-detail'><img src='/images/karma_bank/4.-Good-deed-detail.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/5.-Good-deed-feed.png' title='5.-Good-deed-feed'><img src='/images/karma_bank/5.-Good-deed-feed.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/5.-Settings.png' title='5.-Settings'><img src='/images/karma_bank/5.-Settings.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/5.1-Invite-by-email.png' title='5.1-Invite-by-email'><img src='/images/karma_bank/5.1-Invite-by-email.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/5.2-Invite.png' title='5.2-Invite'><img src='/images/karma_bank/5.2-Invite.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/6.-New-deed.png' title='6.-New-deed'><img src='/images/karma_bank/6.-New-deed.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/7.-Paid-good-deeds.png' title='7.-Paid-good-deeds'><img src='/images/karma_bank/7.-Paid-good-deeds.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/7.1-Card-details.png' title='7.1-Card-details'><img src='/images/karma_bank/7.1-Card-details.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/8.-API-documentation.png' title='8.-API-documentation'><img src='/images/karma_bank/8.-API-documentation.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/8.1.-Badges.png' title='8.1.-Badges'><img src='/images/karma_bank/8.1.-Badges.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/9.-Facebook-integration.png' title='9.-Facebook-integration'><img src='/images/karma_bank/9.-Facebook-integration.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/9.-Web-home.png' title='9.-Web-home'><img src='/images/karma_bank/9.-Web-home.png' /></a></li><li class='thumbnail'><a href='/images/karma_bank/9.1-Good-deed-landing-page.png' title='9.1-Good-deed-landing-page'><img src='/images/karma_bank/9.1-Good-deed-landing-page.png' /></a></li></ul>
+<p>I felt that a literal numerical score for your &#8216;bank balance&#8217; would be too easily gamed and was not entirely in the desired altruistic spirit. I wanted to find a softer way to keep score.</p>
+
+<p>I didn&#8217;t want to be working all on my own this time so I assembled a room full of creative and technical people, bought them some drinks, and we brainstormed ideas around my concept.</p>
+
+<p>One breakthrough idea was to use the idea of climbing a ladder and being able to see others&#8217; progress as they climbed their own, with all sorts of other things happening up in the sky. It might have been like <em>Tiny Tower</em>.</p>
+
+<h3 id='the_done_good_tree'>The Done Good Tree</h3>
+
+<p><img alt='First Tree Sketch' src='/images/donegood/first_tree_sketch.png' /></p>
+
+<p>I wanted to get away from any possible religious connotations with the name, so Karma Bank was never meant to stay. <a href='http://matthewkempton.co.uk/' target='_blank'>Matt Kempton</a> came through with the name &#8220;Done Good&#8221; which perfectly hit the tone I wanted.</p>
+
+<p>Then I realised that a <em>tree</em> was my ideal metaphor for the concept. Good deeds could grow branches, commentary could grow leaves, likes could grow fruit. A bragger would have a thicket of brown branches, others would have a healthy green orchard. People who were really trying would have a tree adorned with different kinds of colourful fruit.</p>
+
+<h3 id='graphic_design'>Graphic design</h3>
+
+<p>I stole some time here and there to get some help from Matt and others to figure out an appealing graphic design style for the site. I ended up settling on a sort of vibrant pixel art style, particularly inspired by the artwork in <a href='http://polytroncorporation.com/what-is-fez'>Fez</a>.</p>
+
+<p>The site needed to work well on mobile so all the layouts needed to adapt to small screen sizes. You can see some of the screens I started with below:</p>
+<ul class='gallery thumbnails'><li class='thumbnail'><a href='/images/donegood_designs/1. Feed.png' title='1. Feed'><img src='/images/donegood_designs/1. Feed.png' /></a></li><li class='thumbnail'><a href='/images/donegood_designs/2. Profile.png' title='2. Profile'><img src='/images/donegood_designs/2. Profile.png' /></a></li><li class='thumbnail'><a href='/images/donegood_designs/3. Tree stages.png' title='3. Tree stages'><img src='/images/donegood_designs/3. Tree stages.png' /></a></li></ul>
+<p>When I&#8217;m working alone I don&#8217;t usually spend longer than I have to in Photoshop. At a certain point it becomes quicker to experiment with HTML and CSS.</p>
+
+<h3 id='development'>Development</h3>
+
+<p>I held out longer than I usually do before writing any code, but eventually it was time to bite the bullet. I was enamoured with <a href='http://meteor.com'>Meteor</a> (and still am) so even though certain features of that particular framework were still a long way off, I knew that I&#8217;d be able to get something up and running with the minimum of code if I used this platform.</p>
+
+<p>It was quite complex to test since it was so social. I was working with various fake Facebook users (as you can see by the video demo) to ensure that stories came through to people&#8217;s feeds appropriately. All comments and likes on Facebook propagated to the feed in the Done Good app and vice versa.</p>
+
+<h3 id='so_what_happened'>So what happened?</h3>
+
+<p>I got the site to a certain point but then I ran out of money and had to take on freelance work. I didn&#8217;t want to release anything if I didn&#8217;t have time to support it, and for a few months I was too busy to do so.</p>
+
+<p>So the site lives in a sort of nearly-finished form, with just enough usability problems that I&#8217;m reluctant to share it.</p>
+
+<h3 id='has_anything_happened_since_then'>Has anything happened since then?</h3>
+
+<p>I attended a &#8221;<a href='http://happathon.com/'>H(app)athon</a>&#8221; and found myself facilitating a brainstorm on the subject of improving happiness. We all seemed to latch onto the idea of competitive altruism but here we framed it more as a process of <em>thanking</em> than bragging. <a href='http://arincrumley.wordpress.com/'>Arin Crumley</a> came up with the name &#8220;Thank Bank&#8221; and we pitched this concept to a room full of people and the consensus was that is was a great idea.</p>
+
+<p>A few of us have stayed in touch and we had some ideas about pursuing this, although there are other similar projects emerging, such as <a href='http://impossible.com'>Impossible</a>, something Jimmy Wales of Wikipedia fame has been involved in.</p>
+
+<h3 id='can_it_be_revived'>Can it be revived?</h3>
+
+<p>If I were to revisit this app, I&#8217;d remove the ability to share your own good deeds in favour of making it a platform where people could thank each other. I think the <em>Thank Bank</em> is a much better way of looking at it.</p>
+
+<p>I&#8217;d really like to see this thing exist, but it might be a few years before I come back to it. Currently my priorities are elsewhere.</p>
+
+<p>I&#8217;ll say this though: ever since I came up with this idea I&#8217;ve been trying to prioritise helping others over helping myself whereever I can. I have found myself leading a much happier life as a result.</p>
+          </div>
+          <div class="sharing">
+  <div class="fb-like" data-href="http://michaelforrest.github.io/2013/10/04/donegood.html" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div>
+</div>
+          <div class="fb-comments" data-href="http://michaelforrest.github.io/2013/10/04/donegood.html" data-width="470"></div>
+        </section>
+
+        <aside id="sidebar">
+          <h2>About Me</h2>
+<img src="/images/michael-forrest-face.png" width="80"/>
+<p>
+  Hello, I am Michael Forrest and I am an artist and programmer based in London, UK. 
+</p>
+<p>
+   I'm always starting things, working hard on them and then abandoning them. This blog is where I declassify some of the projects that have been clogging up my hard drive.
+</p>
+<h2>Unfinished Things</h2>
+<ul>
+  
+    <li>
+      <a href="/2013/10/04/donegood.html">5. Done Good</a>
+      <br/>
+      <small>04 October 2013</small>
+    </li>
+  
+    <li>
+      <a href="/2013/09/25/dinosaurs-app.html">4. Dinosaurs App</a>
+      <br/>
+      <small>25 September 2013</small>
+    </li>
+  
+    <li>
+      <a href="/2013/09/18/the-fifth-theory.html">3. The Fifth Theory</a>
+      <br/>
+      <small>18 September 2013</small>
+    </li>
+  
+    <li>
+      <a href="/2013/09/11/live-dj-concept.html">2. Live DJ Concept</a>
+      <br/>
+      <small>11 September 2013</small>
+    </li>
+  
+    <li>
+      <a href="/2013/09/04/dubstep-machine.html">1. The Dubstep Machine</a>
+      <br/>
+      <small>04 September 2013</small>
+    </li>
+  
+</ul>
+
+<h2>Finished Things</h2>
+<p>Here are a few things I've actually finished. Finishing things is good.</p>
+
+<p><a href="http://goodtohear.co.uk/happiness">Happiness Mood Tracking Journal</a> an app to help people understand themselves better.</p>
+<p><a href="http://appstore.com/goodtohear/goodhabits">Good Habits</a> - a very handy app that gets you into the habit of doing things on a daily or weekly basis (such as writing a blog).</p>
+<p><a href="http://appstore.com/goodtohear/pixelface">Pixel Face</a> - silly app for taking pixelated photographs.</p>
+
+<p>These three albums:
+<a href="https://itunes.apple.com/gb/album/broken-into-tumbolia/id277733891">Broken Into Tumbolia</a> - a very eclectic one,
+<a href="https://itunes.apple.com/gb/album/majectical-electical/id286069118">Majectical Electical</a> - a manic 'up' one and
+<a href="https://itunes.apple.com/gb/album/psychogenic-fugue-state/id284446382">Psychogenic Fugue State</a> - a dark, cathartic one.</p>
+
+
+
+
+
+
+<h2>Other Credits</h2>
+<p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+
+        </aside>
+      </div>
+    </div>
+
+      <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-27485311-3");
+  pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+  </body>
+</html>
