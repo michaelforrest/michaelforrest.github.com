@@ -35,7 +35,9 @@
           <div class="post">
           {{ content }}
           </div>
-          {% include sharing.html page=page %}
+          <div class="sharing">
+            <div class="fb-like" data-href="http://michaelforrest.github.io{{page.url}}" data-send="true" data-width="500" data-show-faces="true"></div>
+          </div>
           <div class="fb-comments" data-href="http://michaelforrest.github.io{{page.url}}" data-width="470"></div>
         </section>
 
